@@ -83,7 +83,7 @@ To run the backend application, run the following command in the backend/api/ di
 
 ```shell
 cd backend/api/
-mvn quarkus:dev
+mvn quarkus:dev "-HOST_IP=localhost"
 ```
 
 This will start the Quarkus server in development mode, and the application will be available at http://localhost:8080.
@@ -102,7 +102,7 @@ npm i --force
 ### Running frontend Application
 ```shell
 cd frontend/
-npm run start
+npm run start --HOST_IP=localhost  
 ```
 
 The application will be available at http://localhost:4200.
